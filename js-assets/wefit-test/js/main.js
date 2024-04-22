@@ -50,6 +50,13 @@ if (cards?.length) {
     }
   });
 }
+const hr =
+  document.getElementsByTagName("hr")?.length &&
+  document.getElementsByTagName("hr")[0];
+  
+if (hr) {
+  hr.classList.add("custom-hr");
+}
 // END CARDS
 
 // Lista
