@@ -263,4 +263,21 @@ textarea {
     page-break-after: avoid;
   }
 }
-
+.custom-header {
+  background: #6b757e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.custom-header p {
+  text-align: end;
+}
+.success-button {
+  background: #27A844;
+  border: none;
+}
+.success-button:hover {
+  background: #2fd152;
+}
