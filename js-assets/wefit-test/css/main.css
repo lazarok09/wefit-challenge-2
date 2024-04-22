@@ -283,22 +283,18 @@ textarea {
 }
 .menu {
   display: flex;
-
   flex-direction: row;
   flex-wrap: wrap;
   gap: 4px;
+  justify-content: flex-start;
 }
-
-@media (min-width: 1028px) {
-  .menu {
-    gap: 8px;
-  }
-}
-
 
 .menu .btn {
   text-wrap: nowrap;
-  font-weight: 700;
+  font-weight: 500;
+  padding: unset;
+  font-size: 1rem;
+  padding: 4px 8px;
 }
 
 .btn-group-vertical > .btn,
@@ -313,4 +309,8 @@ textarea {
 .btn-group-vertical > .btn:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) > .btn {
   border-radius: 4px;
+}
+
+.btn-group > .btn, .btn-group-vertical > .btn {
+  flex: unset;
 }
