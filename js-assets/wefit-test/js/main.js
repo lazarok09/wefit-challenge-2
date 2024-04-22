@@ -1,3 +1,8 @@
+// MENU
+const menu = document.querySelector(".btn-group-vertical");
+menu.classList.add("menu");
+
+
 // HEADER
 const header = document.querySelector(".jumbotron");
 

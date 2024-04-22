@@ -275,9 +275,42 @@ textarea {
   text-align: end;
 }
 .success-button {
-  background: #27A844;
+  background: #27a844;
   border: none;
 }
 .success-button:hover {
   background: #2fd152;
+}
+.menu {
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+@media (min-width: 1028px) {
+  .menu {
+    gap: 8px;
+  }
+}
+
+
+.menu .btn {
+  text-wrap: nowrap;
+  font-weight: 700;
+}
+
+.btn-group-vertical > .btn,
+.btn-group-vertical > .btn-group {
+  width: unset;
+}
+
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn-group:not(:last-child) > .btn {
+  border-radius: 4px;
+}
+.btn-group-vertical > .btn:not(:first-child),
+.btn-group-vertical > .btn-group:not(:first-child) > .btn {
+  border-radius: 4px;
 }
